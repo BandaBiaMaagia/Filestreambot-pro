@@ -35,7 +35,7 @@ async def follow_user(b,m):
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="I am Coded By Adarsh",
+                    text="Samajdari Se File Download Karo",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
@@ -77,7 +77,7 @@ async def start(b, m):
         )
     usr_cmd = m.text.split("_")[-1]
     if usr_cmd == "start" or "/start":
-        if Var.UPDATES_CHANNEL != "None":
+        if Var.UPDATES_CHANNEL = MoviezHubzBackup:
             try:
                 user = await b.get_chat_member(Var.UPDATES_CHANNEL, m.chat.id)
                 if user.status == "kicked":
