@@ -77,7 +77,7 @@ async def start(b, m):
         )
     usr_cmd = m.text.split("_")[-1]
     if usr_cmd == "start" or "/start":
-        if Var.UPDATES_CHANNEL = "t.me/MoviezHubzBackup":
+        if Var.UPDATES_CHANNEL != "None":
             try:
                 user = await b.get_chat_member(Var.UPDATES_CHANNEL, m.chat.id)
                 if user.status == "kicked":
